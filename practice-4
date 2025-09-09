@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced HTML Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, nav, main, aside, footer { padding: 20px; }
+        header { background: #222; color: #fff; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+        nav li { margin: 0 15px; }
+        nav a { color: #222; text-decoration: none; }
+        main { display: flex; }
+        article { flex: 3; margin-right: 20px; }
+        aside { flex: 1; background: #eee; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .form-section { background: #f9f9f9; padding: 15px; margin-top: 20px; }
+        .gallery { display: flex; gap: 10px; margin-top: 20px; }
+        .gallery img { width: 100px; height: 100px; object-fit: cover; }
+        footer { background: #222; color: #fff; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Advanced HTML Page</h1>
+        <p>A demonstration of advanced HTML elements and structure.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#article">Article</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article id="article">
+            <h2>Welcome to the Article Section</h2>
+            <section>
+                <h3>Introduction</h3>
+                <p>This page showcases a variety of HTML features including forms, tables, images, and multimedia.</p>
+            </section>
+            <section id="table">
+                <h3>Data Table Example</h3>
+                <table>
+                    <caption>Sample Data</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Joined</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice</td>
+                            <td>alice@example.com</td>
+                            <td>2023-01-12</td>
+                        </tr>
+                        <tr>
+                            <td>Bob</td>
+                            <td>bob@example.com</td>
+                            <td>2023-03-22</td>
+                        </tr>
+                        <tr>
+                            <td>Charlie</td>
+                            <td>charlie@example.com</td>
+                            <td>2023-05-05</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="form" class="form-section">
+                <h3>Contact Form</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <fieldset>
+                        <legend>Subscribe to newsletter</legend>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        <label for="subscribe">Yes, subscribe me!</label>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+            <section id="gallery">
+                <h3>Image Gallery</h3>
+                <div class="gallery">
+                    <img src="https://via.placeholder.com/100?text=Image+1" alt="Image 1">
+                    <img src="https://via.placeholder.com/100?text=Image+2" alt="Image 2">
+                    <img src="https://via.placeholder.com/100?text=Image+3" alt="Image 3">
+                </div>
+            </section>
+            <section id="video">
+                <h3>Embedded Video</h3>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </article>
+        <aside>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+            <h2>About</h2>
+            <p>This sidebar provides navigation and additional information about the page.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025 Advanced HTML Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
